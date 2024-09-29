@@ -16,8 +16,8 @@ python 3.7, pytorch 1.2.0
 
 Dataset
 --------
-- UltraFeedback
-- SHP
+- [UltraFeedback](https://huggingface.co/datasets/allenai/ultrafeedback_binarized_cleaned)
+- [SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO)
 
 
 Training
@@ -27,7 +27,7 @@ Training
 Evaluation
 --------
 - MT-Bench
-- RewardBench
+- RewardBench: [leaderboard](https://huggingface.co/spaces/allenai/reward-bench)
 
 
 ## Citation
