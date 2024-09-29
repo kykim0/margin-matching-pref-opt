@@ -13,7 +13,7 @@ In EMNLP 2024 Findings
 Setup
 --------
 ```
-conda create -n rlhf_bench python=3.10 absl-py pyparsing pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+conda create -n mmpo python=3.10 absl-py pyparsing pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
 # check gpu
 import torch
