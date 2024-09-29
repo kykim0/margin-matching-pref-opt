@@ -1,0 +1,3 @@
+jsonlines
+optimum
+wandb
