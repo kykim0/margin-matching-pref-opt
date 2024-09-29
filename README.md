@@ -48,6 +48,8 @@ Evaluation
 --------
 - MT-Bench
 - RewardBench: [leaderboard](https://huggingface.co/spaces/allenai/reward-bench)
+<img src="./assets/rbench_leaderboard.png" width="90%" align="middle">
+As of Sep. 2024
 
 
 ## Citation
