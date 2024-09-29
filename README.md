@@ -55,6 +55,6 @@ Evaluation
 
 License
 --------
-MIT License
+Apache License
 
 [1]: 
