@@ -9,9 +9,26 @@ In EMNLP 2024 Findings
 <!--![Overview of MASN](model_overview.jpg)-->
 <img src="./assets/concept.png" width="90%" align="middle">
 
-Requirements
+
+Setup
 --------
-python 3.7, pytorch 1.2.0
+```
+conda create -n rlhf_bench python=3.10 absl-py pyparsing pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# check gpu
+import torch
+torch.cuda.is_available()
+
+# install the remaining package dependencies
+python -m pip install -e .
+pip install -r requirements.txt
+
+# install flash attention
+MAX_JOBS=4 pip install flash-attn --no-build-isolation
+
+# for deepspeed
+conda install -c conda-forge mpi4py mpich
+```
 
 
 Dataset
