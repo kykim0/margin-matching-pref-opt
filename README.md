@@ -15,7 +15,7 @@ Setup
 ```
 conda create -n mmpo python=3.10
 # install pytorch
-conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia
 
 # check gpu
 import torch
