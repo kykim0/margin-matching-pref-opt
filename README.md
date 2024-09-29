@@ -7,7 +7,7 @@ Kyuyoung Kim*, Ah Jeong Seo*, Hao Liu, Jinwoo Shin, Kimin Lee <br>
 In EMNLP 2024 Findings
 
 <!--![Overview of MASN](model_overview.jpg)-->
-<img src="./concept.jpg" width="90%" align="middle">
+<img src="./assets/concept.png" width="90%" align="middle">
 
 Requirements
 --------
