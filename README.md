@@ -3,7 +3,7 @@
 Pytorch Implementation for the paper:
 
 **[Margin Matching Preference Optimization: Enhanced Model Alignment with Granular Feedback][1]** <br>
-Kyuyoung Kim*, Ah Jeong Seo*, Hao Liu, Jinwoo Shin, Kimin Lee <br>
+[Kyuyoung Kim*](https://kykim0.github.io/), Ah Jeong Seo*, [Hao Liu](https://www.haoliu.ai/), [Jinwoo Shin](https://alinlab.kaist.ac.kr/shin.html), [Kimin Lee](https://sites.google.com/view/kiminlee/home) <br>
 In EMNLP 2024 Findings
 
 <!--![Overview of MASN](model_overview.jpg)-->
