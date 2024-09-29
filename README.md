@@ -22,6 +22,7 @@ Dataset
 
 Training
 --------
+- best ckpt: https://huggingface.co/Ahjeong/MMPO_Gemma_7b_gamma1.1_epoch3
 
 
 Evaluation
