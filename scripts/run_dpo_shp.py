@@ -194,7 +194,7 @@ def main():
         num_proc=data_args.preprocessing_num_workers,
     )
 
-    def prevent_overfit(dataset):  # from kto / didn't do in salmon
+    def prevent_overfit(dataset):  # following kto
         all_prompts = dict()
         for i, d in enumerate(dataset):
             p = d['text_prompt'].strip()
