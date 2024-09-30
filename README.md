@@ -83,6 +83,8 @@ To evaluate your model on MT-Bench dataset, follow the guidance in [FastChat](ht
 DPO | 6.09 | 7.40 | 7.41 |
 MMPO | 6.10 | 7.53 | 7.58 |
 
+<img src="./assets/mt-bench.png" width="50%" align="middle">
+
 ### 2. RewardBench
 
 To evaluate your model on RewardBench dataset, follow the guidance in [RewardBench](https://github.com/allenai/reward-bench) repository. You can also compare the performance of different models on the [leaderboard](https://huggingface.co/spaces/allenai/reward-bench). As of September 2024, MMPO achieves state-of-the-art performance compared to competing models at the same scale:
