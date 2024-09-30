@@ -37,13 +37,34 @@ Dataset
 --------
 1. **[UltraFeedback](https://huggingface.co/datasets/allenai/ultrafeedback_binarized_cleaned)**: the filtered version released by AllenAI <br>
 2. **[SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO)**:
-- To build this [filtered version of SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO), we sample uniformly across score differences to evaluate the methods over diverse quality margins.
+- To build this [filtered version of SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO), we sample uniformly across score differences to evaluate the methods over diverse quality margins.
 - Following [KTO](https://github.com/ContextualAI/HALOs), we ensured that the same prompt appears no more than five times to prevent overfitting. More details can be found in `scripts/run_dpo_shp.py`.
 
 
 Training
 --------
-- best ckpt: https://huggingface.co/Ahjeong/MMPO_Gemma_7b_gamma1.1_epoch3
+Our best checkpoint is released at Huggingface: [`MMPO_Gemma_7b_gamma1.1_epoch3`](https://huggingface.co/Ahjeong/MMPO_Gemma_7b_gamma1.1_epoch3)
+
+### DPO
+
+- Gemma 2b:
+```
+accelerate launch --main_process_port=2380 --num_processes=2 --config_file recipes/accelerate_configs/multi_gpu.yaml scripts/run_dpo.py recipes/gemma-2b/dpo.yaml --bt_beta=2.2
+```
+
+- Gemma 7b:
+```
+accelerate launch --main_process_port=2382 --num_processes=4 --config_file recipes/accelerate_configs/deepspeed_zero3.yaml scripts/run_dpo.py recipes/gemma-7b/dpo.yaml --bt_beta=0.3
+```
+To training with SHP data, run:
+```
+accelerate launch --main_process_port=2381 --num_processes=4 --config_file recipes/accelerate_configs/deepspeed_zero3.yaml scripts/run_dpo_shp.py recipes/gemma-7b/dpo_shp.yaml --bt_beta=1.1
+```
+
+- Llama 8b:
+```
+accelerate launch --main_process_port=2383 --num_processes=4 --config_file recipes/accelerate_configs/deepspeed_zero3.yaml run_dpo.py recipes/llama-3-8b/dpo.yaml --bt_beta=2.2
+```
 
 
 Evaluation
