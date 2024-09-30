@@ -279,14 +279,14 @@ class DPOConfig(transformers.TrainingArguments):
     """If set, filter pairs whose differences are less than or equal to this threshold."""
 
 
-@dataclass
-class KTOConfig(trl.KTOConfig):
-    """
-    Arguments related to KTO training.
-    """
-
-    bt_beta: float = field(default=None)
-    """Rationality constant in the Bradley-Terry model."""
+# @dataclass
+# class KTOConfig(trl.KTOConfig):
+#     """
+#     Arguments related to KTO training.
+#     """
+#
+#     bt_beta: float = field(default=None)
+#     """Rationality constant in the Bradley-Terry model."""
 
 
 @dataclass
