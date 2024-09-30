@@ -2,7 +2,7 @@
 
 Pytorch Implementation for the paper:
 
-**[Margin Matching Preference Optimization: Enhanced Model Alignment with Granular Feedback][1]** <br>
+**Margin Matching Preference Optimization: Enhanced Model Alignment with Granular Feedback** <br>
 [Kyuyoung Kim*](https://kykim0.github.io/), Ah Jeong Seo*, [Hao Liu](https://www.haoliu.ai/), [Jinwoo Shin](https://alinlab.kaist.ac.kr/shin.html), [Kimin Lee](https://sites.google.com/view/kiminlee/home) <br>
 In EMNLP 2024 Findings
 
@@ -35,8 +35,10 @@ conda install -c conda-forge mpi4py mpich
 
 Dataset
 --------
-- [UltraFeedback](https://huggingface.co/datasets/allenai/ultrafeedback_binarized_cleaned)
-- [SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO)
+1. **[UltraFeedback](https://huggingface.co/datasets/allenai/ultrafeedback_binarized_cleaned)**: the filtered version released by AllenAI <br>
+2. **[SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO)**:
+- To build this [filtered version of SHP](https://huggingface.co/datasets/Ahjeong/SHP_filtered_for_MMPO), we sample uniformly across score differences to evaluate the methods over diverse quality margins.
+- Following [KTO](https://github.com/ContextualAI/HALOs), we ensured that the same prompt appears no more than five times to prevent overfitting. More details can be found in `scripts/run_dpo_shp.py`.
 
 
 Training
@@ -47,6 +49,8 @@ Training
 Evaluation
 --------
 - MT-Bench
+
+
 - RewardBench: [leaderboard](https://huggingface.co/spaces/allenai/reward-bench)
 <img src="./assets/rbench_leaderboard.png" width="90%" align="middle">
 As of Sep. 2024
@@ -61,4 +65,3 @@ License
 --------
 Apache License
 
-[1]: 
