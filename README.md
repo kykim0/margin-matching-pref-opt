@@ -96,4 +96,11 @@ More experimental details can be found in the paper. <br>
 ## Citation
 
 ```bibtex
+@inproceedings{kim2024margin,
+  title={Margin Matching Preference Optimization: Enhanced Model Alignment with Granular Feedback},
+  author={Kim, Kyuyoung and Seo, Ah and Liu, Hao and Shin, Jinwoo and Lee, Kimin},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages={13554--13570},
+  year={2024}
+}
 ```
